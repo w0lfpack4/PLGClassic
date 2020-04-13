@@ -1,0 +1,82 @@
+--------------------------------------------------------------------
+-- PLG German Localization (By Laurenz2016)
+--------------------------------------------------------------------
+
+PLG["deDE"] = {
+	["errors"] = {
+		["ERR_DATA"]       = "Keine Daten gefunden. PLG schliesst.",
+		["ERR_LEARN"]      = "Gehe zu deinem Lehrer und Lerne das folgende Rezept:",
+		["ERR_LEARNVEND"]  = "Gehe zu dem unten stehenden Verkäufer und kaufe das folgende Rezept:",
+		["ERR_LOW_LEVEL"]  = "Du musst Level %s sein um das folgende Rezept zu erlernen:",
+		["ERR_NOT_FOUND"]  = "Das Rezept konnte auf dem Server nicht gefunden werden. Bitte verwenden Sie eine alternative Rezept zu level.",
+		["ERR_MAX_LEVEL"]  = "Maximales Level erreicht, keine weiteren Rezepte verfügbar. PLG schliesst.",
+		["ERR_MAX_SKILL"]  = "Du hast das maximum deines Beruf levels erreicht. Gehe zu deinem Lehrer und lerne das nächste.",
+	},
+	["app"] = {
+		["APP_NAME"]       = "PLG",
+		["APP_TITLE"]      = "Profession Leveling Guide",
+		["BTN_RESET_NAME"] = "Reset Guide Daten",
+		["BTN_RESET_TIP"]  = "Dies löscht alle gespeicherten Daten guide und laden Sie Ihren User Interface.",
+		["MSG_TRAINER"]    = "Gehe zu deinem Lehrer!",
+		["MSG_DRAENOR"]    = "Erhalten ", 
+		["MSG_WAITING"]    = "Warte auf den Server...",
+		["DBG_NAME"]       = "PLG Debugging",
+		["DBG_DESC"]       = "Anklicken um das Beruf-Leveling zu imitieren.",
+	},
+	["tab1"] = {	
+		["TAB_TITLE"]      = "Guide",
+		["TAB_TOOLTIP"]    = "Klicken Sie auf, um die Führung.",
+		["PAG_TITLE"]      = "Anleitung",
+		["TXT_CREATE"]     = "Stelle %s von dem folgendem Rezept her, bis Beruflevel %s.",
+		["TXT_KEEP"]       = "Du musst diese behalten für spätere Rezepte.",
+		["LBL_RECIPE"]     = "Rezept",
+		["LBL_ALTERNATE"]  = "Alternative",
+		["LBL_REAGENTS"]   = "Reagenzien",
+		["TIP_SELECT"]     = "(Anklicken zum anwählen)",
+		["TIP_Q1_TITLE"]   = "Quest für das Rezept",
+		["TIP_Q1_DESC"]    = "Dieses Rezept bekommst du mit der obenstehenden Questreihe.  Der Name des Questgebers und der Ort stehen dadrunter. ",
+		["TIP_Q_LEVEL"]    = "Erfordert Niveau",
+		["TIP_Q2_TITLE"]   = "Vorausgesetzte Quest",
+		["TIP_Q2_DESC"]    = "Diese Questreihe muss erst abgeschlossen werden. Der name des Questgebers und der Ort stehen dadrunter.",
+		["TIP_V_TITLE"]    = "Rezept Verkäufer",
+		["TIP_V_DESC"]     = "Dieses Rezept kannst du nur kaufen. Der Name des Verkäufers und der Ort stehen unterhalb. ",
+		["TIP_NPC"]        = "NPC",
+		["TIP_LOCATION"]   = "Standort",
+		["TIP_WAYPOINT"]   = "Anklicken um einen Wegpunkt zu setzen.",
+	},
+	["tab2"] = {	
+		["TAB_TITLE"]      = "Stellvertreter",
+		["TAB_TOOLTIP"]    = "Klicken Sie zum Anzeigen einer Liste der alternativen Rezepten.",
+		["PAG_TITLE"]      = "Alternative Rezepte",
+		["PAG_DESC"]       = "\n\nDie folgende Liste von Rezepten kann als Alternativen zu den Leitfaden Anregungen und ändert sich, während Sie den Level. Left-Click zum Auswechseln des primären Rezept, mit der rechten Maustaste zum Ersetzen der alternative Rezept.",
+		["MSG_REPLACE_PRIMARY"]   = "Ersetzen Sie die primäre Rezept mit %s?",
+		["MSG_REPLACE_ALTERNATE"] = "Ersetzen alternative Rezept mit %s?",
+		["MSG_RELOAD"]            = "Möchten Sie den Vorgang fortsetzen?",
+	},
+	["tab3"] = {	
+		["TAB_TITLE"]      = "Reagenzien",
+		["TAB_TOOLTIP"]    = "Klicken Sie zum Anzeigen einer Liste aller erforderlichen Reagenzien.",
+		["PAG_TITLE"]      = "Reagenz Einkaufsliste",
+		["PAG_DESC"]       = "\n\nDie folgende Liste enthält die Anzahl der erforderlichen Reagenzien auf Stufe dieses Berufs und ändert sich, während Sie den Level. Dies ist nur eine Annäherung auf der Grundlage der Daten. Zum Beispiel: Wenn du keine skill-ups beim Basteln eine grüne oder gelbe Rezept wird es eine Notwendigkeit zum Kauf, Betrieb oder Handwerk mehr Reagenzien bis Sie bekommen eine skill-up.",
+	},
+	["tab4"] = {	
+		["TAB_TITLE"]      = "Hilfe",
+		["TAB_TOOLTIP"]    = "Klicken Sie zum Anzeigen der Hilfe.",
+		["PAG_TITLE"]      = "PLG Hilfe",
+		["PAG_DESC"]       = "\n\n|cff000000Anleitung:|r\nDer Anleitungstext zeigt wichtige Informationen wie z.B. wieviel mal du was von welchem Rezept du herstellen sollst und wo du welche Rezepte her bekommst.  \n\n|cff000000RECIPES:|r\nPLG wechselt automatisch zu einem Rezept amhängig von deinem aktuellen Beruf-Level. Manichmal wird auch ein alternatives Rezept angezeigz.  Klicke es an um die Reagenzien für das Alternative Rezept anzuzeigen. Rezepte die nicht ausgewählt sind werden Grau angeziegt. Über jedem Rezept ist ein Farbbalken mit dem die bestimmte Schwierigkeit des Rezeptes angezeigt wird.  \n\n|cff000000REAGENTS:|r\nDer Guide zeigt dir die Gesammtanzahl von Zutaten an die du braucht um ein Beruf-Level abzuschließen. z.B. sollst du ein Elexier machen und braucht eine Phiole. Um zum nächsten Level zu kommen brauchst du 5 Elexiere der Guide sagt dir also das du 5 Phiolen besorgen sollst. \n\n|cff000000Verkäufer:|r\nManichmal kannst du ein Rezept nicht bei deinem Lehrer erlernen.  Ein Icon wird neben dem ausgewählen Rezept für den Verkäufer |T"..PLG.textures.VENDORRECIPE..":16|t oder die Questreihe |T"..PLG.textures.QUESTRECIPE..":16|t.  Der Tooltip dieses Icons zeigt den Namen der Quest an (wenn benötigt), oder Verkäufer und Standort.  Wenn du das Icon anklickst wird ein Wegpunkt mit TomTom oder Carbonite angezeigt der dich zu dem Verkäufer oder Questgeber führt. \n\n|cff000000OTHER NOTES:|r\n* Jeder gegenstand den man anklicken kann bringt den Mauszeiger zum leuchten wenn man drüberfährt. \n\n* Jedes Rezept, falls bekannt, wird automatisch im Beruffesnster ausgewählt.\n\n* Wenn du das maximale Level für einen Beruf erreicht hat wird das Fenster nicht mehr für diesen Beruf angezeigt.\n\n* 25 Punkte bevor du das maximum für deine momentane Berufsfertigkeit erreicht hast, warnt dich ein Orangener Text oben im Fenster das du deinen Lehrer besuchen solltest.\n\n|cff000000Viel Glück!",
+		["DRAENOR_TITLE"]    = "\n\n|cff000000DRAENOR BERUFE:|r\n",
+		["TXT_PRE_DRAENOR"]  = "Bevor Sie level dieser Beruf weiter, müssen Sie das Rezept oben aufgeführt. Primäre Beruf Rezepte kann erworben werden von Anbietern in Ashran, ihre Garnison Beruf Gebäude oder erhalten als Belohnung von einer Quest ablegen. Sekundäre Beruf Rezepte sind in der Regel durch die Fischerei, Sammeln, Kochen, oder auch vom Essen.";
+		["TXT_POST_DRAENOR"] = "Bauen Sie Ihre Garnison Beruf Gebäude und starten Sie Arbeitsaufträge erstellen, sobald sie können. Arbeitsaufträge nehmen Rohstoffe und kehren Sie die primären und sekundären basteln Reagenzien für ihren Beruf alle 4 Stunden. Zusätzlich zu den Rezepten in diesem Handbuch gibt es zwei Rezepte für jede primäre Beruf, kann gestaltete einmal täglich. Stellen Sie sicher, dass sie das Handwerk diese, um die Materialien und die skill-ups vorgesehen.";
+	},
+	["help"] = {	
+		["Alchemy"]       = "\n\n|cff000000Alchemie:|r\nDieser Beruf ist am besten zusammen mit Kräuterkunde, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Kräuter farmen kannst.",
+		["Blacksmithing"] = "\n\n|cff000000Schmiedekunst:|r\nDieser Beruf ist am besten zusammen mit Bergbau, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Metalle farmen kannst.",
+		["Cooking"]       = "\n\n|cff000000Kochen:|r\nDer einfachste weg Kochen zu leveln wenn du noch unter level 85 bist, ist bei dem Pilgerfreudenfest mitzumachen.  Bei diesem Event kannst du ca von level 1-350 leveln und somit ein Großmeister werden.  Wenn du level 85 bist kannst du um Halbhügelmarkt in Pandaria gehen und mit Sungshin Eisentatz sprechen.  Dort kannst du kochen von 1-600 leveln. Wenn du kochen lernen möchtest wärend du spielst, wähle diesen Guide.",
+		["Enchanting"] = "\n\n|cff000000Verzauberkunst:|r\nDieser Beruf ist am besten zusammen mit Schneiderei weil du die meisten Tücher/Kleider die du herstellst entzaubern kannst.",
+		["Engineering"] = "\n\n|cff000000Ingenieurskunst:|r\nDieser Beruf ist am besten zusammen mit Bergbau, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Metalle farmen kannst.",
+		["Inscription"] = "\n\n|cff000000Inschriftenkunde:|r\nDieser Beruf ist am besten zusammen mit Kräuterkunde, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Kräuter farmen kannst.",
+		["Jewelcrafting"] = "\n\n|cff000000Juvelierskunst:|r\nDieser Beruf ist am besten zusammen mit Bergbau or Verzauberkunst, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Materialien farmen kannst, oder die hergestellten Sachen entzaubern kannst.",
+		["Leatherworking"] = "\n\n|cff000000Lederverarbeitung:|r\nDieser Beruf ist am besten zusammen mit Kürschnerei, du kannst viel Gold sparen wenn du diese beiden Berufe zusammen levelst weil du alle benötigten Materialien farmen kannst.",
+		["Tailoring"] = "\n\n|cff000000Schneiderei:|r\nDu wirst Tausende stoffe brauchen wenn du Schneiderei leveln möchtest. Es wird sehr viel Gold kosten wenn du diese ganzen Stoffe kaufen möchtest, oder wenn du sie farmen möchtest, dauert das auch sehr lange. Schneiderei ist am besten zusammen mit Verzauberkunst weil du die meisten Tücher/Kleider die du herstellst entzaubern kannst.",
+	},
+}

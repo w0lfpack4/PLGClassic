@@ -1,0 +1,42 @@
+## Interface: 11304
+## Title: |cff0279ffProfession Leveling Guide: |cffffffffCore|r
+## X-DisplayName: Profession Leveling Guide - Core
+## Notes: An in-game profession leveling guide.
+## Author: vonbek
+## Version: 1.13.4.1
+## X-Updated: April 11, 2020
+## LoadOnDemand: 1
+## LoadWith: Blizzard_TradeSkillUI
+## Dependencies: Blizzard_TradeSkillUI
+## OptionalDeps: Carbonite, TomTom, TradeSkillDW, TradeskillHD, Skillet
+## SavedVariables: PLG_ALT_DB
+## X-Category: Professions
+## X-New: Completely REbuilt.
+
+# --- WoW Methods ---
+Core\Methods.lua
+
+# --- Variables ---
+Core\Variables.lua
+
+# --- Localization ---
+Localization\enUS.lua
+Localization\deDE.lua
+Localization\frFR.lua
+
+# --- Data files ---
+Data\Recipes.lua
+Data\Vendors.lua
+Data\Quests.lua
+Data\Guides.lua
+Data\Professions.lua
+
+# --- Core files ---
+Core\Common.lua
+Core\Controls.lua
+Core\Frames.lua
+Core\Display.lua
+Core\Tooltips.lua
+Core\Data.lua
+Core\Addons.lua
+Core\Core.lua
