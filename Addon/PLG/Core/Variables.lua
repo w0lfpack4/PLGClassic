@@ -14,8 +14,8 @@ PLG.DB = {}
 PLG.debug = false -- imitate profession leveling
 PLG.screenshot = false  -- turn off debugging tells for screenshots
 PLG.debugProfession = "Cooking"
-PLG.debugEarned = 5
-PLG.debugTotal = 75
+PLG.debugEarned = 130
+PLG.debugTotal = 150
 PLG.debugSkillUp = 1
 
 ---------------------------

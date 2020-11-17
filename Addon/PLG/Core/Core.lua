@@ -367,7 +367,7 @@ function PLG:Initialize()
 					PLG.resetButton:Disable()
 					-- iterate saved professions
 					for k,v in pairs(PLG_ALT_DB) do
-						-- iterate any levels saved in those professions						
+						-- iterate any levels saved in those professions					
 						for key, val in pairs(v) do
 							-- replace guide data with saved data
 							-- GUIDE DATA [PROFESSION] [GUIDE LEVEL] = SAVED VALUE 

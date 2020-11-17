@@ -40,10 +40,10 @@ function PLG:getQuest(id)
 		PLG:Tooltip()
 		local name, displayID, location, x, y = unpack(PLG.DB.Vendors[tonumber(NPC1)]) -- get NPC data
 		PLG:Tooltip(PLG.tab1.TIP_NPC, name, "WHT","GRN")
-		PLG:Tooltip(PLG.tab1.TIP_LOCATION, GetMapNameByID(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
+		PLG:Tooltip(PLG.tab1.TIP_LOCATION, C_Map.GetAreaInfo(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
 		PLG.model:SetDisplayInfo(displayID)
 		PLG.modelFrame.title:SetText(name)
-		PLG.modelFrame.zone:SetText(GetMapNameByID(location)..PLG.colors.WHITE.." ("..x..","..y..")")
+		PLG.modelFrame.zone:SetText(C_Map.GetAreaInfo(location)..PLG.colors.WHITE.." ("..x..","..y..")")
 	end
 	-- QUEST 2
 	if preqID then
@@ -61,7 +61,7 @@ function PLG:getQuest(id)
 			PLG:Tooltip()
 			local name, displayID, location, x, y = unpack(PLG.DB.Vendors[tonumber(NPC2)]) -- get NPC data
 			PLG:Tooltip(PLG.tab1.TIP_NPC, name, "WHT","GRN")
-			PLG:Tooltip(PLG.tab1.TIP_LOCATION, GetMapNameByID(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
+			PLG:Tooltip(PLG.tab1.TIP_LOCATION, C_Map.GetAreaInfo(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
 		end
 	end
 end
@@ -82,10 +82,10 @@ function PLG:getNPC(id)
 	PLG:Tooltip(PLG.tab1.TIP_V_DESC,nil,"WHT",nil,1)
 	PLG:Tooltip()
 	PLG:Tooltip(PLG.tab1.TIP_NPC, name, "WHT","GRN")
-	PLG:Tooltip(PLG.tab1.TIP_LOCATION, GetMapNameByID(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
+	PLG:Tooltip(PLG.tab1.TIP_LOCATION, C_Map.GetAreaInfo(location)..PLG.colors.WHITE.." ("..x..","..y..")", "WHT", "LBL")
 	PLG.model:SetDisplayInfo(displayID)
 	PLG.modelFrame.title:SetText(name)
-	PLG.modelFrame.zone:SetText(GetMapNameByID(location)..PLG.colors.WHITE.." ("..x..","..y..")")
+	PLG.modelFrame.zone:SetText(C_Map.GetAreaInfo(location)..PLG.colors.WHITE.." ("..x..","..y..")")
 end
 
 ---------------------------
@@ -150,8 +150,8 @@ function PLG:setTooltip(data,list)
 				id = NPC
 			end
 			-- get the data, set the waypoint
-			local name, displayID, location, x, y = unpack(PLG.DB.Vendors[tonumber(id)])				
-			PLG:setWaypoint(name, location, x, y)
+			local name, displayID, UIMapID, x, y = unpack(PLG.DB.Vendors[tonumber(id)])				
+			PLG:setWaypoint(UIMapID, x, y)
 		end)
 	end
 	_G["PLG_Vendor_Button"]:Show()
