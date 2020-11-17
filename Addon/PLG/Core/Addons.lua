@@ -17,8 +17,8 @@ PLG.TradeSkillFrame = TradeSkillFrame
 -- navigation addons
 ---------------------------
 PLG.navigationAddOns = {
-	["TomTom"]    = {false, function(name, location, x, y) TomTom:AddMFWaypoint(location, nil, x/100, y/100, {["title"] = name,}) end },
-	["Carbonite"] = {false, function(name, location, x, y) Nx.slashCommand("goto "..GetMapNameByID(location).." "..x.." "..y.." "..name) end },
+	["TomTom"]    = {false, function(waypoint) TomTom:SetWaypoint(waypoint, nil, true, true) end },
+	["Carbonite"] = {false, function(waypoint) Nx.slashCommand("goto "..waypoint) end },
 }
 
 ---------------------------
@@ -35,11 +35,11 @@ PLG.tradeSkillAddOns = {
 ---------------------------
 -- set a waypoint
 ---------------------------
-function PLG:setWaypoint(name, location, x, y)
+function PLG:setWaypoint(UIMapID, x, y)
 	PLG:Debug("Function","setWaypoint")
 	for k,v in pairs(PLG.navigationAddOns) do
 		if v[1] == true then
-			v[2](name, location, x, y)
+			v[2]({UIMapID, x, y})
 			--break
 		end
 	end
